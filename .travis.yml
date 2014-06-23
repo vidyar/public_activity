@@ -4,20 +4,20 @@ language: ruby
  # - 2.1.1
 matrix:
   include:
-    - rvm: 2.0.0
-      gemfile: gemfiles/Gemfile.rails-3.X
-      env: PA_ORM=active_record
+    #- rvm: 2.0.0
+     # gemfile: gemfiles/Gemfile.rails-3.X
+     # env: PA_ORM=active_record
     - rvm: 1.9.3
       gemfile: gemfiles/Gemfile.rails-3.X
       env: PA_ORM=active_record
     - rvm: 1.9.3
       gemfile: gemfiles/Gemfile.rails-4.0
       env: PA_ORM=active_record
-    - rvm: 2.0.0
-      gemfile: gemfiles/Gemfile.rails-4.0
-      env: PA_ORM=active_record
-env:
-  - PA_ORM=mongoid
+    #- rvm: 2.0.0
+    # gemfile: gemfiles/Gemfile.rails-4.0
+     # env: PA_ORM=active_record
+#env:
+  #- PA_ORM=mongoid
 #  - PA_ORM=mongo_mapper
 services:
   - mongodb
